@@ -1,0 +1,682 @@
+<!--
+ * A Design by GraphBerry
+ * Author: GraphBerry
+ * Author URL: http://graphberry.com
+ * License: http://graphberry.com/pages/license
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>단지안내 - 인천연희공원 호반써밋</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free singlepage web template created by GraphBerry">
+    <meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, PHP, Responsive, Mobile">
+    <meta name="author" content="GraphBerry.com"/>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/cdnjs.cloudflare.com_ajax_libs_twitter-bootstrap_4.1.3_css_bootstrap.min.css">
+
+	<!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <!-- <link rel="stylesheet" href="css/my_mouseover.css" /> -->
+
+
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
+	
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@300;400&family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+		
+</head>
+<body>
+
+	<div class="modal" id="modal"  role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true" style="  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);">
+        <div class="modal-dialog" style="width:100vw;">
+            <div class="modal-content" style="border: #ffffff;" >
+                <!-- <div class="container"> -->
+					<!-- <div class="modal-btn-box"> -->
+					<!-- <button type="button" id="modal-open">모달창 열기</button>   -->
+					<!-- </div> -->
+					
+					<div class="popup-wrap" id="popup">
+					  <div class="popup">
+						<!-- <div class="popup-head">
+							<span class="head-title">
+							  </span>
+						</div> -->
+						<div class="popup-body">
+						  <div class="body-content">
+
+							<div class="body-contentbox">
+								<img alt="Modus" src="img/2.jpg" style="width: 100%; ">
+
+							</div>
+							
+							<!-- <button type="button" class="btn btn-outline-dark" id="close" style="float: right;">닫기</button> -->
+
+						  </div>
+						  <!-- <button type="button" class="btn btn-outline-dark" id="close" style="float: right;">닫기</button> -->
+
+							<!-- <button type="button" id="close">모달창 열기</button>   -->
+							<!-- <button type="button" class="btn btn-outline-dark" id="close" style="float: left;">닫기</button> -->
+
+						</div>
+						<div class="popup-foot">
+						  <!-- <span class="pop-btn confirm" id="confirm">확인</span> -->
+						<!-- <span class="pop-btn confirm" id="confirm"></span> -->
+						  <span class="pop-btn confirm" id="confirm" data-dismiss="modal" style="color: #212121; " data-scroll-to="#application" >문의예약</span>
+						  <!-- <button type="button" class="btn btn-primary" data-dismiss="modal" data-scroll-to="#application">Go to Application</button> -->
+
+						  <span class="pop-btn close" id="close" style="color: #212121;">창 닫기</span>
+						  <!-- <span class="pop-btn close" id="close" style="color: #212121; float: right;">창 닫기</span> -->
+
+						</div>
+					  </div>
+				  </div>
+				  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+	
+	<header id="header">
+		
+		<!-- Section title -->
+		<h1 class="sr-only">Modus | Home page</h1>
+		
+		<nav class="navbar navbar-default navbar-fixed-top" style="width: 100vw;">
+		  <!-- Section title -->
+		  <h1 class="sr-only">Main navigation</h1>
+
+		  <div class="container" style="width: 100vw;">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand smoothScroll" href="#home">
+				<!-- #설명 : 2.홈페이지 메인로고(왼쪽 상단) -->
+		        <img alt="Modus" src="img/20.png">
+		      </a>
+		    </div>
+
+			<!-- #설명 : 3.메뉴(상단)  -->
+		    <div class="collapse navbar-collapse" id="main-navbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="active"><a class="smoothScroll" href="#home1" style="font-size:large;">Home <span class="sr-only">(current)</span></a></li>
+		        <li><a class="smoothScroll" href="#business" style="font-size:large;">사업개요</a></li>
+				<li><a class="smoothScroll" href="#premium" style="font-size:large;">프리미엄</a></li>
+		        <li><a class="smoothScroll" href="#location" style="font-size:large;">입지안내</a></li>
+		        <li><a class="smoothScroll" href="#estate" style="font-size:large;">단지안내</a></li>
+		        <li><a class="smoothScroll" href="#generation" style="font-size:large;">세대안내</a></li>
+				<li><a class="smoothScroll" href="#application" style="font-size:large;">미계약분대기신청</a></li>
+				<li><a class="smoothScroll" href="tel:전화번호" style="font-size:large; color:#f25656 ;    filter: invert(16%) sepia(89%) saturate(6054%) hue-rotate(358deg) brightness(97%) contrast(113%);"> 
+			<!-- #설명 : 3-1.전화번호  -->
+			<img src="img/telephone.svg">010-7202-8295</a></li>
+
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container -->
+		</nav>
+
+	</header>
+
+	<main>
+		
+		<!-- #설명 : 4.첫번째 파트  -->
+		<section id="home1">
+			<!-- Section title -->
+
+			
+			  
+			<h1 class="sr-only">Home section1</h1>
+
+			<!-- <style>
+				@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+				</style> -->
+
+		<!-- <style>
+			@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@300;400&family=Roboto:ital,wght@0,100;1,400&display=swap');
+			</style> -->
+			<style>
+				@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700;800&family=Noto+Sans+KR:wght@300;400&family=Roboto:ital,wght@0,100;1,400&display=swap');
+			  </style>
+
+			<div class="home-content2">
+						<div class="text _text_wrap">
+							<div class="text-wrap _text fr-view">
+								<!-- #설명 : 4-1.이미지 삽입 부분  -->
+								<p style="text-align: center;"><img src="img/1.jpg" style="width: 100vw; height: auto;" class="fr-dib"></p>
+							</div>
+						</div>
+					</div>
+
+			</div>
+
+		</section>
+
+		<!-- #설명 : 5.두번째 파트  -->
+		<section id="home2">
+			<!-- Section title -->
+			<h1 class="sr-only">Home section2</h1>
+			<div class="home-content2">
+						<div class="text _text_wrap">
+							<div class="text-wrap _text fr-view">
+							    <p style="text-align: center;"><br></p>
+							    <p style="text-align: center;"><br></p>
+								<!-- <p style="text-align: center;"><img src="img/1.jpg" style="width: 100vw; height: auto;" class="fr-dib"></p> -->
+
+								<!-- #설명 : 5-1.이미지 삽입 부분  -->
+							    <p><img src="img/2.png" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;"> </p>
+							    <p><strong></strong><br></p>
+							    <p style="text-align: center;"><br></p>
+							    <p style="text-align: center;"><br></p>
+								<!-- #설명 : 5-2.첫번째 글 삽입 부분  -->
+							    <p style="text-align: center;"><br><span style="font-size:large;">연희공원 호반써밋만의</span></p>
+								<!-- #설명 : 5-3.두번째 글 삽입 부분  -->
+							    <p style="text-align: center;"><br><span style="font-size:x-large; color: rgb(254, 5, 5);">특별한 프리미엄 혜택</span></p>
+							    <p style="text-align: center;"><br></p>
+							    <p style="text-align: center;"><br></p>
+								<!-- #설명 : 5-4.두번째 이미지 삽입 부분  -->
+							    <p><img src="img/3.jpeg" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+							    <p style="text-align: center;"><br></p>
+							    <p style="text-align: center;"><br></p>
+								<!-- #설명 : 5-5.세번째 글 삽입 부분  -->
+							    <p style="text-align: center;"><br><span style="font-size:large;">30만평 규모의 공원 조성</span></p>
+								<!-- #설명 : 5-6.네번째 글 삽입 부분  -->
+							    <p style="text-align: center;"><br><span style="font-size:x-large; color: rgb(254, 5, 5);">공원을 품은 프리미엄 단지</span></p>
+							    <p style="text-align: center;"><br></p>
+								<!-- #설명 : 5-7.세번째 이미지 삽입 부분  -->
+							    <p><img src="img/4.jpeg" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+							    <p style="text-align: center;"><br></p>
+								<!-- #설명 : 5-.세번째 이미지 삽입 부분  -->
+							    <p><img src="img/5.jpeg" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+							    <p style="text-align: center;"><br></p>
+								
+							</div>
+						</div>
+					</div>
+
+			</div>
+
+		</section>
+
+		
+
+		<section id="business">
+			<!-- Section title -->
+			<h1 class="sr-only">Business section</h1>
+			<div class="text _text_wrap">
+				<div class="text-wrap _text fr-view">
+					<div class="history-content">
+					<p style="text-align: center;"><span style="font-size:xx-large;">연희공원 호반써밋</span></p>
+					<p style="text-align: center;"><span style="font-size:x-large; color: rgb(241, 246, 0);">사업개요</span></p>
+					</div>
+					<p style="text-align: center;"><br></p>
+					<p style="text-align: center;"><br></p>
+					<p><img src="img/6.png" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+					<p style="text-align: center;"><br></p>
+					<p><img src="img/7.png" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+					<p style="text-align: center;"><br></p>
+					<p style="text-align: center;"><br></p>
+				</div>
+			</div>	
+		</section>
+
+
+
+		<section id="premium">
+			<!-- Section title -->
+			<h1 class="sr-only">Premium section</h1>
+			<div class="text _text_wrap">
+				<div class="text-wrap _text fr-view">
+					<div class="history-content">
+					<p style="text-align: center;"><span style="font-size:xx-large;">연희공원 호반써밋</span></p>
+					<p style="text-align: center;"><span style="font-size:x-large; color: rgb(241, 246, 0);">프리미엄</span></p>
+					</div>
+					<p style="text-align: center;"><br></p>
+					<p style="text-align: center;"><br></p>
+					<p><img src="img/8.png" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+					<p style="text-align: center;"><br></p>
+					<p><img src="img/9.jpeg" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+					<p style="text-align: center;"><br></p>
+					<p><img src="img/9.jpeg" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+				</div>
+			</div>	
+		</section>
+
+
+		<section id="location">
+			<!-- Section title -->
+			<h1 class="sr-only">Location section</h1>
+			<div class="text _text_wrap">
+				<div class="text-wrap _text fr-view">
+					<div class="history-content">
+					<p style="text-align: center;"><span style="font-size:xx-large;">연희공원 호반써밋</span></p>
+					<p style="text-align: center;"><span style="font-size:x-large; color: rgb(241, 246, 0);">입지안내</span></p>
+					</div>
+					<p style="text-align: center;"><br></p>
+					<p style="text-align: center;"><br></p>
+					<p><img src="img/11.png" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+					<p style="text-align: center;"><br></p>
+				</div>
+			</div>	
+		</section>
+
+		
+		<section id="estate">
+			<!-- Section title -->
+			<h1 class="sr-only">Estate section</h1>
+			<div class="text _text_wrap">
+				<div class="text-wrap _text fr-view">
+					<div class="history-content">
+					<p style="text-align: center;"><span style="font-size:xx-large;">연희공원 호반써밋</span></p>
+					<p style="text-align: center;"><span style="font-size:x-large; color: rgb(241, 246, 0);">단지안내</span></p>
+					</div>
+					<p style="text-align: center;"><br></p>
+					<p style="text-align: center;"><br></p>
+					<p><img src="img/12.png" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+					<p style="text-align: center;"><br></p>
+					<p style="text-align: center;"><br></p>
+					<p><img src="img/13.png" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+					<p style="text-align: center;"><br></p>
+					<p style="text-align: center;"><br></p>
+					<p><img src="img/14.png" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;"> </p>
+					<p style="text-align: center;"><br></p>
+				</div>
+			</div>	
+		</section>
+
+		<section id="generation">
+			<!-- Section title -->
+			<h1 class="sr-only">Generation section</h1>
+			<div class="text _text_wrap">
+				<div class="text-wrap _text fr-view">
+					<div class="history-content">
+					<p style="text-align: center;"><span style="font-size:xx-large;">연희공원 호반써밋</span></p>
+					<p style="text-align: center;"><span style="font-size:x-large; color: rgb(241, 246, 0);">세대안내</span></p>
+					</div>
+
+					<p style="text-align: center;"><br></p>
+					</div>
+					<div class="photo-gallery">
+						<div class="container" style = "width: 100vw;">
+							<!-- <div class="row photos" style="filter: brightness(40%)" > -->
+								<div class="row photos" style="max-width: 100%; height: auto; display: block; margin-left: auto;margin-right: auto;">
+								<!-- <div style="float: left;">
+									<section>
+								<a href="img15.png" data-lightbox="photos"><img src="img15.png" style="width: 100px"></a>
+								<a href="img15.png" data-lightbox="photos"><img src="img15.png" style="width: 100px"></a>
+								<div class="img-fluid" ><a href="img15.png" data-lightbox="photos"><img class="img-fluid" src="img/15.png" style="max-width: 100% !important; height: auto !important;"></a></div>
+
+									</section>	
+								</div>
+								-->
+								<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/15.png" data-lightbox="photos"><img class="img-fluid" src="img/15.png" style="max-width: 100% !important; height: auto !important; flex-wrap: wrap; text-align : center;"></a></div>
+								<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/16.png" data-lightbox="photos"><img class="img-fluid" src="img/16.png" style="max-width: 100% !important; height: auto !important; flex-wrap: wrap; text-align : center;"></a></div>
+								<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/17.png" data-lightbox="photos"><img class="img-fluid" src="img/17.png" style="max-width: 100% !important; height: auto !important; flex-wrap: wrap; text-align : center;"></a></div>
+								<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/18.png" data-lightbox="photos"><img class="img-fluid" src="img/18.png" style="max-width: 100% !important; height: auto !important; flex-wrap: wrap; text-align : center;"></a></div>
+								<!-- <div class="col-sm-6 col-md-4 col-lg-3 item" ><a href="img/15.png" data-lightbox="photos"><img class="img-fluid" src="img/15.png"></a></div> -->
+								<!-- <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="img/12.png" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg"></a></div> -->
+							</div>
+						</div>
+					</div>
+					<p style="text-align: center;"><br></p>
+					<p style="text-align: center;"><br></p>
+
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+				</div>
+			</div>	
+		</section>
+
+		
+		<section id="application">
+			<!-- Section title -->
+			<h1 class="sr-only">Application section</h1>
+			<div class="text _text_wrap">
+				<div class="text-wrap _text fr-view">
+					<div class="history-content">
+					<p style="text-align: center;"><span style="font-size:xx-large;">연희공원 호반써밋</span></p>
+					<p style="text-align: center;"><span style="font-size:x-large; color: rgb(241, 246, 0);">미계약분 대기신청 서비스</span></p>
+					</div>
+
+					
+
+					<!-- <p style="text-align: center;"><br></p> -->
+					<div class="container" style="width: 100vw;">
+						<!-- </div> -->
+
+						<div class="contact-area bg-color1 p-t-130 p-b-130">
+							<div class="container" >
+								<article class="" data-aos="fade-up">
+									<p style="text-align: center;"><br></p>
+
+								<div class="row">
+									<div class="col-md-7" style="margin: auto;">
+										<div class="comment-form">
+											<!-- <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
+											<div class="inner-title">
+												<label for="input_txt_c7f435e12a3b3" class="control-label">관심평형
+													<i class="icon-required" aria-hidden="true"></i>
+												</label>								
+											</div>
+											<form id="emailForm" class="gform" method="POST" data-email="rydn2002@gmail.com" action="https://script.google.com/macros/s/AKfycbzy4_Wuvce9D9rrp2cr9TA3lsxunuTVTyvRruuuLEIn6RO5Z7CVEY3fLX54FJtKXY-nig/exec">
+												<div class="form-row">
+													<div class="col-md-12">
+														<div class="form-row">
+															<div class="col-md-12">
+																<div class="form-group">
+																	<input type="text" class="form-control" id="type" name="type" placeholder="관심평형" required>
+																</div>
+															</div>
+														</div>
+														<div class="inner-title">
+															<label for="input_txt_c7f435e12a3b3" class="control-label">방문희망시간
+																<i class="icon-required" aria-hidden="true"></i>
+															</label>								
+														</div>
+														<div class="form-row">
+															<div class="col-md-12">
+																<div class="form-group">
+																	<input type="text" class="form-control" id="time" name="time" placeholder="방문희망시간" required>
+																</div>
+															</div>
+														</div>
+														<div class="inner-title">
+															<label for="input_txt_c7f435e12a3b3" class="control-label">이름
+																<i class="icon-required" aria-hidden="true"></i>
+															</label>								
+														</div>
+														<div class="form-row">
+															<div class="col-md-12">
+																<div class="form-group">
+																	<input type="text" class="form-control" id="name" name="name" placeholder="이름" required>
+																	<!-- <textarea class="form-control" id="name" name="name" rows="5" placeholder="이름"></textarea> -->
+																</div>
+															</div>
+														</div>
+														<div class="inner-title">
+															<label for="input_txt_c7f435e12a3b3" class="control-label">전화번호
+																<i class="icon-required" aria-hidden="true"></i>
+															</label>								
+														</div>
+														<div class="form-row">
+															<div class="col-md-12">
+																<div class="form-group">
+																	<input type="text" class="form-control" id="phone" name="phone" placeholder="핸드폰번호" required>
+																	<!-- <textarea class="form-control" id="phone" name="phone" rows="5" placeholder="핸드폰 번호"></textarea> -->
+																</div>
+															</div>
+														</div>
+														<h4 class="mb-3">개인정보 이용 수집 동의
+															<i aria-hidden="true" class="icon-required" style="display: inline-block;
+															width: 5px;
+															height: 5px;
+															background: #f25656;
+															border-radius: 50%;
+															margin-left: 5px;
+															vertical-align: 2px;"></i>
+														</h4>
+														<form class="validation-form" novalidate >
+														  <div class="row" >
+																<div class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly
+																style="    padding: 10px;
+																height: 160px;
+																overflow-y: auto;
+																font-size: 13px;
+																border-radius: 0;
+																color: #212121;
+																background: #ffffff;
+																background-color: #ffffff;
+																border-color: rgba(0, 0, 0, 0.1);
+																-webkit-box-shadow: none;
+																box-shadow: none;
+																border-radius: 0;
+																display: block;
+																width: 100vw;">
+							
+																	1. 수집하는 개인정보 항목<br>
+																		회사는 온라인 접수 서비스를 통하여 아래와 같은 개인정보를 수집하고 있습니다.<br>
+																		- 수집항목 : 이름, 휴대전화번호, 생년월일 등<br>
+																		- 수집방법 : 온라인 접수<br>
+																		<br>
+																		<br>
+																		2. 개인정보의 수집 및 이용목적<br>
+																		회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br>
+																		- 청약상담 및 분양정보 등 문의 처리<br>
+																		- 마케팅 및 광고홍보에 활용<br>
+																		<br>
+																		<br>
+																		3. 개인정보의 보유 및 이용기간<br>
+																		회사는 개인정보수집 및 이용목적이 달성된 후에는 예외 없이 해당정보를 지체없이 파기합니다.</label>
+																</div>
+									
+														  </div>
+							
+														  <div class="checkbox checkbox-styled">
+															<label>
+																<input type="checkbox" autocomplete="off">
+																<span>개인정보 수집 및 이용에 동의합니다.</span>
+															</label>
+														</div>
+			
+														<script type="text/javascript">                              
+														(function() {                                 // get all data in form and return object                                 
+															function getFormData(form) {                                   
+																 var elements = form.elements;                                    
+																 var honeypot;                                     
+																 var fields = Object.keys(elements).filter(function(k) {                                       
+																	if (elements[k].name === "honeypot") {                                       
+																		honeypot = elements[k].value;                                       
+																		return false;                                       
+																	}                                       return true;                                    
+																}).map(function(k) {                                       
+																	if(elements[k].name !== undefined) {                                       
+																		return elements[k].name;                                       // special case for Edge's html collection                                       
+																	}else if(elements[k].length > 0){                                       
+																		return elements[k].item(0).name;                                       
+																	}                                    
+																}).filter(function(item, pos, self) {                                       
+																	return self.indexOf(item) == pos && item;                                   
+																});                                     
+																var formData = {};                                    
+																fields.forEach(function(name){                                       
+																	var element = elements[name];                                        // singular form elements just have one value                                      
+																	formData[name] = element.value;                                        // when our element has multiple items, get their values                                      
+																	if (element.length) {                                       
+																		var data = [];                                       
+																		for (var i = 0; i < element.length; i++) {                                         
+																			 var item = element.item(i);                                          
+																			 if (item.checked || item.selected) {                                             
+																				data.push(item.value);                                          
+																			}                                       
+																		}                                       
+																		formData[name] = data.join(', ');                                       
+																	}                                    
+																});                                     // add form-specific values into the data                                    
+																formData.formDataNameOrder = JSON.stringify(fields);                                    
+																formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name                                    
+																formData.formGoogleSendEmail                                       
+																= form.dataset.email || ""; // no email by default                                     
+																return {data: formData, honeypot: honeypot};                                 
+															}                                  
+															function handleFormSubmit(event) {  // handles form submit without any jquery                                   
+																 event.preventDefault();           // we are submitting via xhr below                                   
+																  var form = event.target;                                    
+																  var formData = getFormData(form);                                    
+																  var data = formData.data;                                     // If a honeypot field is filled, assume it was done so by a spam bot.                                    
+																  if (formData.honeypot) {                                       
+																	return false;                                    
+																}                                     
+																disableAllButtons(form);                                    
+																var url = form.action;                                    
+																var xhr = new XMLHttpRequest();                                    
+																xhr.open('POST', url);                                    // xhr.withCredentials = true;                                    
+																xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");                                    
+																xhr.onreadystatechange = function() {                                       
+																	if (xhr.readyState === 4 && xhr.status === 200) {                                          
+																		form.reset();                                          
+																		var formElements = form.querySelector(".form-elements")                                          
+																		if (formElements) {                                             
+																			formElements.style.display = "none"; // hide form                                          
+																		}                                          
+																		var thankYouMessage = form.querySelector(".thankyou_message");                                          
+																		if (thankYouMessage) {                                             
+																			thankYouMessage.style.display = "block";                                             
+																			alert("메일 전송에 성공했습니다. 확인 후 회신드리겠습니다.");                                         
+																		 }                                       
+																		}                                    
+																		};                                    // url encode form data for sending as post data                                    
+																		var encoded = Object.keys(data).map(function(k) {                                       
+																			return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);                                    
+																		}).join('&');                                    xhr.send(encoded);                                 
+																	}                                  function loaded() {                                    // bind to the submit event of our form                                    
+																		var forms = document.querySelectorAll("form.gform");                                    
+																		for (var i = 0; i < forms.length; i++) {                                       
+																			forms[i].addEventListener("submit", handleFormSubmit, false);                                   
+																			 }                                 
+																			 };                                 
+																			 document.addEventListener("DOMContentLoaded", loaded, false);                                  
+																			 function disableAllButtons(form) {                                    
+																				var buttons = form.querySelectorAll("button");                                    
+																				for (var i = 0; i < buttons.length; i++) {                                       
+																					buttons[i].disabled = true;                                    
+																					}                                 
+																				}                                
+																					 
+																					 })();                           
+																					 </script>
+														<div class="form-group m-0">
+															<button id="btnSubmit" class="btn-submit mt-2"  >예약신청</button>
+														</div>
+													</div>
+												</div>
+												<!-- <div style="display:none" class="thankyou_message">
+													<h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+												</div> -->
+											</form>
+										</div>
+									</div>
+								</div>
+								</article>
+							</div>
+						</div>
+						<p style="text-align: center;"><br></p>
+						<p style="text-align: center;"><br></p>
+						<p style="text-align: center;"><br></p>
+
+					</div>
+				</div>
+			</div>	
+
+			</div>
+			
+		</section>
+		<!-- Section title -->
+		<footer>
+			<div class="" style="background-color: #d3d3d369;text-align: center;">
+
+			<a class="btn btn-primary" href="tel:전화번호" role="button" style="font-size:xx-large;  color:#ffffff ;   margin:auto; filter: invert(16%) sepia(89%) saturate(6054%) hue-rotate(358deg) brightness(97%) contrast(113%);"> 
+				<img src="" style="margin: 20;">문의전화</a>
+				<div class="space" style="  width: 10px;">
+				</div>
+				<a class="btn btn-primary" href="#application" role="button" style="font-size:xx-large; margin:auto; vertical-align: middle;"
+				; >예약하기</a>
+			</footer>
+			<br>
+			</div>
+
+
+
+	</main>
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.mq.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<!-- Latest compiled and minified JavaScript Bootstrap-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!-- Custom JS -->
+	<script src="js/custom.js"></script>
+
+	<script>
+		$(function() {
+			$("#popup").css('display','flex').hide().fadeIn();
+		});
+		</script>
+	<script>
+		$(function() {
+			$("#modal").css('display','flex').hide().fadeIn();
+		});
+		</script>
+<script>
+	$(function(){
+  $("#confirm").click(function(){
+      modalClose();
+      //컨펌 이벤트 처리
+  });
+  $("#modal-open").click(function(){        $("#popup").css('display','flex').hide().fadeIn();
+  });
+  $("#close").click(function(){
+      modalClose();
+  });
+  function modalClose(){
+	$('#modal').off()
+	$("#modal").fadeOut();
+
+	$('#popup').off()
+
+    $("#popup").fadeOut();
+
+  }
+});
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('[data-scroll-to]').on('click', function () {
+            var target = $(this).data('scroll-to');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 500);
+        });
+    });
+</script>
+
+<!-- <script>
+    document.querySelectorAll('#model-image2').addEventListener('click',function(){
+	  $("#modal").modal("noshow");
+    })
+    //닫기 버튼을 누르면, 모달창의 노쇼클래스가 추가된다. 즉, 모달창이 사라진다
+    
+    </script> -->
+
+
+</html>
